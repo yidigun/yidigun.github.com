@@ -27,12 +27,13 @@
 
 <p>This page is under-construction.</p>
 
-<pre><code>package com.yidigun.github;
-@Controller
-public class IntroPage {
-    public void handle(HttpServletRequest req,
+<pre><code>package com.yidigun.github.pages;
+import com.yidigun.github.GitHubPage;
+import com.yidigun.github.PageUnderConstructionException;
+public class Home implements GitHubPage {
+    public void handleRequest(HttpServletRequest req,
                               HttpServletResponse res) {
-        throw new PageNotReadyException("Sorry ;-)");
+        throw new PageUnderConstructionException("Sorry ;-)");
     }
 }
 </code></pre>
