@@ -1,2 +1,0 @@
-yidigun.github.com
-==================
